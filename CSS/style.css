@@ -1,0 +1,77 @@
+/*
+indsætter pony font
+*/
+@font-face {
+    font-family: PONY;
+    src: url("pony.ttf");
+
+}
+/*sætter body til at have pont font og background color, samt font color */
+body{
+    font-family: PONY;
+    background: #f83b9e ;
+    color:white;
+}
+/* hver film er placeret i et li element med classnavnet movie*/
+/* definerer gridrows */
+.movie{
+    display: grid;
+    grid-template-rows: 110px 400px 300px auto;
+
+}
+/*placerer alle elementerne i griddet*/
+h2{
+    grid-row: 1/1;
+}
+img{
+    grid-row: 2/2
+}
+.container{
+    grid-row: 3/3;
+}
+iframe{
+    grid-row: 4/4;
+    height: 215px
+}
+
+
+li{
+    list-style-type: none;
+
+    margin: 30px;
+
+}
+
+/*Rating og year indeholde tal, som vises tydeligst som bold med denne font*/
+.rating, .year{
+    font-weight: bold;
+}
+/*definerer en fælles størrelse for billederne "Burde skalleres for optimering"*/
+img{
+    width: 300px;
+    height: 400px;
+}
+/*Sætter en max-width for beskrivelsen*/
+
+.description{
+    max-width: 300px;
+}
+
+#movieContainer{
+display: flex;
+    flex-direction: row;
+
+}
+
+/* Ved skærme under 600px ændres placeringen til vertivalt*/
+@media only screen and (max-width: 600px) {
+    #movieContainer {
+        display: block;
+
+    }
+}
+
+
+
+
+
