@@ -8,7 +8,7 @@ trailervideos = {
 // array af film titlerne til omdb
 let movies = ["My%20Little%20Pony:%20The%20Movie", "My%20Little%20Pony:%20Friendship%20Is%20Magic", "My%20Little%20Pony:%20Equestria%20Girls%20-%20Rainbow%20Rocks", "My%20Little%20Pony:%20Equestria%20Girls%20-%20Friendship%20Games", "My%20Little%20Pony%20Tales"];
 // variable med omdb url der indeholder API Key samt title parameter
-let omdbUrl = "http://www.omdbapi.com/?apikey=cec8d3b2&t=";
+let omdbUrl = "https://www.omdbapi.com/?apikey=cec8d3b2&t=";
 let container = document.getElementById("movieContainer");
 // For loop fetcher alt dataen fra API for de forskellige film og indsætter den i elementer vi creater samtidigt
 for (let i = 0; i < movies.length; i++) {
